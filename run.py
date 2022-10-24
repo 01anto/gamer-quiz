@@ -23,5 +23,15 @@ def get_user_data():
     return username, password
 
 
+def update_user_details_worksheet():
+    """
+    Update user_details worksheet, Add a new row for username and password
+    """
+    print("Updating user_details worksheet")
+    user_details_worksheet = SHEET.worksheet("user_details")
+    user_details_worksheet.append_row(data)
+    print("user_details worksheet updated successfully.\n")
+
+    
 data = get_user_data()
 print(data)
