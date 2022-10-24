@@ -32,6 +32,13 @@ def update_user_details_worksheet(data):
     user_details_worksheet.append_row(data)
     print("user_details worksheet updated successfully.\n")
 
-    
-data = get_user_data()
-update_user_details_worksheet(data)
+
+def main():
+    """
+    Run all gamer-quiz functions
+    """
+    data = get_user_data()
+    update_user_details_worksheet(data)
+
+
+main()
