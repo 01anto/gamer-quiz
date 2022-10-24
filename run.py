@@ -19,7 +19,6 @@ def get_user_data():
     """
     username = input("Please enter your username --> ")
     password = input("Please enter your password --> ")
-    print(f"Username is: {username}\n Password is {password}")
     return username, password
 
 
