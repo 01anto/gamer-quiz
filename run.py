@@ -12,8 +12,14 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('gamer_quiz')
 
-userDetails = SHEET.worksheet('user_details')
 
-data = userDetails.get_all_values()
+def get_user_data():
+    """
+    Get user data and password input from the user
+    """
+    username = input("Please enter your username --> ")
+    password = input("Please enter your password --> ")
+    print(f"Username is: {username}\nPassword is {password}")
 
-print(data)
+
+get_user_data()
