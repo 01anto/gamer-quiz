@@ -23,4 +23,5 @@ def get_user_data():
     return username, password
 
 
-get_user_data()
+data = get_user_data()
+print(data)
