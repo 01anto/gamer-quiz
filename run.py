@@ -23,7 +23,7 @@ def get_user_data():
     return username, password
 
 
-def update_user_details_worksheet():
+def update_user_details_worksheet(data):
     """
     Update user_details worksheet, Add a new row for username and password
     """
@@ -34,4 +34,4 @@ def update_user_details_worksheet():
 
     
 data = get_user_data()
-print(data)
+update_user_details_worksheet(data)
