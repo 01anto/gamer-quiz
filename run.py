@@ -13,6 +13,13 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('gamer_quiz')
 
 
+class Question:
+    def __init__(self, questionText, correctAnswer, answerOptions=None):
+        self.questionText = questionText
+        self.correctAnswer = correctAnswer
+        self.answerOptions = answerOptions
+
+
 def get_user_data():
     """
     Get user data and password input from the user
