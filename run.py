@@ -35,18 +35,14 @@ def ask_question():
     and check it against the correct answer (Or its corresponding letter)
     """
     for question in questions:
-        if (question.answerOptions is not None):
-            print(question.questionText)
-            for option in question.answerOptions:
+        print(question.questionText)
+        for option in question.answerOptions:
                 print(option)
-            answer = input(f"-->")
-        else:
-            print(question.questionText)
-            answer = input(f"-->")
+        answer = input(f"-->")
 
         if answer.lower() == question.correctAnswer.lower():
             print(f"You said {answer}, Thats right!")
-        elif answer.lower() in question.otherAnswer:
+        elif question.otherAnswer is not None and answer.lower() in question.otherAnswer:
             print(f"You said ({answer}) {question.correctAnswer}, Thats right!")
         else:
             print(f"{answer} is incorrect, the correct answer is ({question.otherAnswer}){question.correctAnswer}")
