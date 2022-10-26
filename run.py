@@ -33,7 +33,7 @@ def ask_question():
     Ask the user a question from the questions list and check it against the correct answer
     """
     for question in questions:
-        if (question.answerOptions != None):
+        if (question.answerOptions is not None):
             print(question.questionText)
             for option in question.answerOptions:
                 print(option)
