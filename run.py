@@ -40,7 +40,7 @@ def ask_question():
         question_counter += 1
         print(question.questionText)
         for option in question.answerOptions:
-                print(option)
+            print(option)
         answer = input(f"-->")
 
         if answer.lower() == question.correctAnswer.lower():
