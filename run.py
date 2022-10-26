@@ -21,11 +21,21 @@ class Question:
 
 
 questions = [
-    Question("What company produces mario games", "nintendo", ["(a) Sony", "(b) Sega", "(c) Nintendo", "(d) Microsoft"]),
-    Question("In what game will you find a creeper", "minecraft", ["(a) Minecraft", "(b) Terraria", "(c) Roblox", "(d) Fortnite"]),
-    Question("On what game console did crash bandicoot first appear", "playstation", ["(a) Dreamcast", "(b) Gamecube", "(c) Playstation", "(d) Xbox"]),
-    Question("Which of the following games did Hideo Kojima work on", "silent hill", ["(a) Resident Evil", "(b) Silent Hill", "(c) Dying light", "(d) The Thing"]),   
+    Question("What company produces mario games", "nintendo",["(a) Sony", "(b) Sega", "(c) Nintendo", "(d) Microsoft"]),
+    Question("In what game will you find a creeper", "minecraft",["(a) Minecraft", "(b) Terraria", "(c) Roblox", "(d) Fortnite"]),
+    Question("On what game console did crash bandicoot first appear", "playstation",["(a) Dreamcast", "(b) Gamecube", "(c) Playstation", "(d) Xbox"]),
+    Question("Which of the following games did Hideo Kojima work on", "silent hill",["(a) Resident Evil", "(b) Silent Hill", "(c) Dying light", "(d) The Thing"]) 
 ]
+
+
+def ask_question():
+    """
+    Ask the user a question from the questions list
+    """
+    for question in questions:
+        print(question.questionText)
+        answer = input(f"-->")
+
 
 def get_user_data():
     """
@@ -52,6 +62,7 @@ def main():
     """
     data = get_user_data()
     update_user_details_worksheet(data)
+    ask_question()
 
 
 main()
