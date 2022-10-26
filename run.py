@@ -26,7 +26,7 @@ questions = [
     Question("In what game will you find a creeper?", "minecraft", "a", ["(a) Minecraft", "(b) Terraria", "(c) Roblox", "(d) Fortnite"]),
     Question("On what game console did crash bandicoot first appear?", "playstation", "c", ["(a) Dreamcast", "(b) Gamecube", "(c) Playstation", "(d) Xbox"]),
     Question("Which cancelled game was Hideo Kojima working on before he left konami?", "silent hill", "b", ["(a) Resident Evil", "(b) Silent Hill", "(c) Dying light", "(d) The Thing"]),
-    Question("What was sonic the hedgehogs original name?", "Mr.Needlemouse", "b", ["(a) Mr.Pricklepants", "(b) Shadow the hedgehog", "(c) Danger Mouse", "(d) Mr.Needlemouse"])
+    Question("What was sonic the hedgehogs original name?", "Mr.Needlemouse", "d", ["(a) Mr.Pricklepants", "(b) Shadow the hedgehog", "(c) Danger Mouse", "(d) Mr.Needlemouse"])
 ]
 
 
