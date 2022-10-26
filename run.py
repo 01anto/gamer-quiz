@@ -20,6 +20,13 @@ class Question:
         self.answerOptions = answerOptions
 
 
+questions = [
+    Question("What company produces mario games", "nintendo", ["(a) Sony", "(b) Sega", "(c) Nintendo", "(d) Microsoft"]),
+    Question("In what game will you find a creeper", "minecraft", ["(a) Minecraft", "(b) Terraria", "(c) Roblox", "(d) Fortnite"]),
+    Question("On what game console did crash bandicoot first appear", "playstation", ["(a) Dreamcast", "(b) Gamecube", "(c) Playstation", "(d) Xbox"]),
+    Question("Which of the following games did Hideo Kojima work on", "silent hill", ["(a) Resident Evil", "(b) Silent Hill", "(c) Dying light", "(d) The Thing"]),   
+]
+
 def get_user_data():
     """
     Get user data and password input from the user
