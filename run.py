@@ -55,7 +55,7 @@ def ask_question():
             print(f"{answer} is incorrect, the correct answer is ({question.otherAnswer}){question.correctAnswer}")
             lives -= 1
             if lives == 0:
-                print(f"Hard Luck, you ran out of lives!")
+                print("Hard Luck, you ran out of lives!")
                 break
     print(f"you got {score} out of {question_counter} questions correct!")
 
