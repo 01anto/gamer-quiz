@@ -46,7 +46,7 @@ def ask_question():
 
         if answer.lower() == question.correctAnswer.lower():
             print(f"You said {answer}, Thats right!")
-        elif question.otherAnswer is not None and answer.lower() in question.otherAnswer:
+        elif answer.lower() in question.otherAnswer:
             print(f"You said ({answer}) {question.correctAnswer}, Thats right!")
         else:
             print(f"{answer} is incorrect, the correct answer is ({question.otherAnswer}){question.correctAnswer}")
