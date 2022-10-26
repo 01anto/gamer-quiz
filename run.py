@@ -32,13 +32,20 @@ def ask_question():
     """
     Ask the user a question from the questions list and check it against the correct answer
     """
-    for question in questions:
+for question in questions:
+    if (question.answerOptions != None):
+        print(question.questionText)
+        for option in question.answerOptions:
+            print(option)
+        answer = input(f"-->")
+    else:
         print(question.questionText)
         answer = input(f"-->")
-        if answer.lower() == question.correctAnswer.lower():
-            print(f"You said {answer}, Thats right!")
-        else:
-            print(f"{answer} is incorrect, the correct answer is {question.correctAnswer}")
+
+    if answer.lower() == question.correctAnswer.lower():
+        print(f"You said {answer}, Thats right!")
+    else:
+        print(f"{answer} is incorrect, the correct answer is {question.correctAnswer}")
 
 
 def get_user_data():
