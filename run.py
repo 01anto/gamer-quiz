@@ -30,7 +30,8 @@ questions = [
 
 def ask_question():
     """
-    Ask the user a question from the questions list and check it against the correct answer
+    Ask the user a question from the questions list, present four possible answers,
+    and check it against the correct answer
     """
     for question in questions:
         if (question.answerOptions is not None):
