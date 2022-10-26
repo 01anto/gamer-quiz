@@ -14,11 +14,11 @@ SHEET = GSPREAD_CLIENT.open('gamer_quiz')
 
 
 class Question:
-    def __init__(self, questionText, correctAnswer, otherAnswer, answerOptions):
-        self.questionText = questionText
-        self.correctAnswer = correctAnswer
-        self.otherAnswer = otherAnswer
-        self.answerOptions = answerOptions
+    def __init__(self, question_text, correct_answer, other_answer, answer_options):
+        self.question_text = question_text
+        self.correct_answer = correct_answer
+        self.other_answer = other_answer
+        self.answer_options = answer_options
 
 
 questions = [
@@ -40,19 +40,19 @@ def ask_question():
     for question in questions:
         question_counter += 1
         print(f"Question {question_counter}")
-        print(question.questionText)
-        for option in question.answerOptions:
+        print(question.question_text)
+        for option in question.answer_options:
             print(option)
         answer = input(f"-->")
 
-        if answer.lower() == question.correctAnswer.lower():
+        if answer.lower() == question.correct_answer.lower():
             print(f"You said {answer}, Thats right!")
             score += 1
-        elif answer.lower() in question.otherAnswer:
-            print(f"You said ({answer}) {question.correctAnswer}, Thats right!")
+        elif answer.lower() in question.other_answer:
+            print(f"You said ({answer}) {question.correct_answer}, Thats right!")
             score += 1
         else:
-            print(f"{answer} is incorrect, the correct answer is ({question.otherAnswer}){question.correctAnswer}")
+            print(f"{answer} is incorrect, the correct answer is ({question.other_answer}){question.correct_answer}")
             lives -= 1
             if lives == 0:
                 print("Hard Luck, you ran out of lives!")
