@@ -14,9 +14,10 @@ SHEET = GSPREAD_CLIENT.open('gamer_quiz')
 
 
 class Question:
-    def __init__(self, questionText, correctAnswer, answerOptions=None):
+    def __init__(self, questionText, correctAnswer, otherAnswer=None answerOptions=None):
         self.questionText = questionText
         self.correctAnswer = correctAnswer
+        self.otherAnswer = otherAnswer
         self.answerOptions = answerOptions
 
 
