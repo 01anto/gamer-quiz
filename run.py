@@ -43,7 +43,7 @@ def ask_question():
         print(question.question_text)
         for option in question.answer_options:
             print(option)
-        answer = input(f"-->")
+        answer = input("-->")
 
         if answer.lower() == question.correct_answer.lower():
             print(f"You said {answer}, Thats right!")
