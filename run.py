@@ -38,6 +38,7 @@ def ask_question():
     question_counter = 0
     for question in questions:
         question_counter += 1
+        print(f"Question {question_counter}")
         print(question.questionText)
         for option in question.answerOptions:
             print(option)
