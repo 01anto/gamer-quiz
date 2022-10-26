@@ -35,6 +35,7 @@ def ask_question():
     for question in questions:
         print(question.questionText)
         answer = input(f"-->")
+        return answer
 
 
 def get_user_data():
