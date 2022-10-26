@@ -14,7 +14,7 @@ SHEET = GSPREAD_CLIENT.open('gamer_quiz')
 
 
 class Question:
-    def __init__(self, questionText, correctAnswer, otherAnswer=None answerOptions=None):
+    def __init__(self, questionText, correctAnswer, otherAnswer=None, answerOptions=None):
         self.questionText = questionText
         self.correctAnswer = correctAnswer
         self.otherAnswer = otherAnswer
@@ -22,10 +22,10 @@ class Question:
 
 
 questions = [
-    Question("What company produces mario games", "nintendo",["(a) Sony", "(b) Sega", "(c) Nintendo", "(d) Microsoft"]),
-    Question("In what game will you find a creeper", "minecraft",["(a) Minecraft", "(b) Terraria", "(c) Roblox", "(d) Fortnite"]),
-    Question("On what game console did crash bandicoot first appear", "playstation",["(a) Dreamcast", "(b) Gamecube", "(c) Playstation", "(d) Xbox"]),
-    Question("Which of the following games did Hideo Kojima work on", "silent hill",["(a) Resident Evil", "(b) Silent Hill", "(c) Dying light", "(d) The Thing"]) 
+    Question("What company produces mario games", "nintendo", "c",["(a) Sony", "(b) Sega", "(c) Nintendo", "(d) Microsoft"]),
+    Question("In what game will you find a creeper", "minecraft", "a",["(a) Minecraft", "(b) Terraria", "(c) Roblox", "(d) Fortnite"]),
+    Question("On what game console did crash bandicoot first appear", "playstation", "c",["(a) Dreamcast", "(b) Gamecube", "(c) Playstation", "(d) Xbox"]),
+    Question("Which of the following games did Hideo Kojima work on", "silent hill", "b",["(a) Resident Evil", "(b) Silent Hill", "(c) Dying light", "(d) The Thing"]) 
 ]
 
 
