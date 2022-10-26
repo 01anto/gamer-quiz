@@ -35,7 +35,9 @@ def ask_question():
     and check it against the correct answer (Or its corresponding letter)
     """
     score = 0
+    question_counter = 0
     for question in questions:
+        question_counter += 1
         print(question.questionText)
         for option in question.answerOptions:
                 print(option)
@@ -49,7 +51,7 @@ def ask_question():
             score += 1
         else:
             print(f"{answer} is incorrect, the correct answer is ({question.otherAnswer}){question.correctAnswer}")
-    print(f"you got {score} questions correct!")
+    print(f"you got {score} out of {question_counter} questions correct!")
 
 
 def get_user_data():
