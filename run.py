@@ -34,6 +34,7 @@ def ask_question():
     Ask the user a question from the questions list, present four possible answers,
     and check it against the correct answer (Or its corresponding letter)
     """
+    score = 0
     for question in questions:
         print(question.questionText)
         for option in question.answerOptions:
@@ -42,10 +43,13 @@ def ask_question():
 
         if answer.lower() == question.correctAnswer.lower():
             print(f"You said {answer}, Thats right!")
+            score += 1
         elif answer.lower() in question.otherAnswer:
             print(f"You said ({answer}) {question.correctAnswer}, Thats right!")
+            score += 1
         else:
             print(f"{answer} is incorrect, the correct answer is ({question.otherAnswer}){question.correctAnswer}")
+    print(f"you got {score} questions correct!")
 
 
 def get_user_data():
