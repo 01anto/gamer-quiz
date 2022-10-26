@@ -30,12 +30,15 @@ questions = [
 
 def ask_question():
     """
-    Ask the user a question from the questions list
+    Ask the user a question from the questions list and check it against the correct answer
     """
     for question in questions:
         print(question.questionText)
         answer = input(f"-->")
-        return answer
+        if answer.lower() == question.correctAnswer.lower():
+            print(f"You said {answer}, Thats right!")
+        else:
+            print(f"{answer} is incorrect, the correct answer is {question.correctAnswer}")
 
 
 def get_user_data():
@@ -63,7 +66,8 @@ def main():
     """
     data = get_user_data()
     update_user_details_worksheet(data)
-    ask_question()
+    answer = ask_question()
+    check_answer(answer)
 
 
 main()
