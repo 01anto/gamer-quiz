@@ -66,8 +66,7 @@ def main():
     """
     data = get_user_data()
     update_user_details_worksheet(data)
-    answer = ask_question()
-    check_answer(answer)
+    ask_question()
 
 
 main()
