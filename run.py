@@ -33,6 +33,7 @@ questions = [
     Question("What was sonic the hedgehogs original name?", "Mr.Needlemouse", "d", ["(a) Mr.Pricklepants", "(b) Shadow the hedgehog", "(c) Danger Mouse", "(d) Mr.Needlemouse"])
 ]
 
+
 def gamer_quiz_logo():
     """
     Creates an ascii gamer quiz logo at program start
@@ -46,6 +47,7 @@ def gamer_quiz_logo():
     for frame in frames:
         print("".join(frame))
         time.sleep(0.5)
+    
         
 def ask_question():
     """
