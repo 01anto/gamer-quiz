@@ -32,7 +32,11 @@ questions = [
     Question("What was sonic the hedgehogs original name?", "Mr.Needlemouse", "d", ["(a) Mr.Pricklepants", "(b) Shadow the hedgehog", "(c) Danger Mouse", "(d) Mr.Needlemouse"])
 ]
 
-
+def gamer_quiz_logo():
+    """
+    Creates an ascii gamer quiz logo at program start
+    """
+  
 def ask_question():
     """
     Ask the user a question from the questions list, present four possible answers,
