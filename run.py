@@ -69,6 +69,12 @@ def ask_question():
             answer = input("-->").strip().lower()
             if answer == "":
                 print("You didn't enter anything - please enter some text!")
+                continue
+            answer_set = ['a', 'b', 'c', 'd']
+            if answer not in answer_set:
+                print("You didn't give an actual option - enter a, b, c or d")
+                answer = ""
+                continue
 
         if answer == question.correct_answer.lower():
             print(f"You said {answer}, Thats right!")
