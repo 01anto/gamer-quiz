@@ -38,9 +38,9 @@ def gamer_quiz_logo():
     Creates an ascii gamer quiz logo at program start
     """
     logo = ["logo1.txt", "logo2.txt", "logo3.txt", "logo4.txt", "logo5.txt", "logo6.txt"]
-    frames =[]
+    frames = []
     for file in logo:
-        f = open(file,"r",encoding="utf8")
+        f = open(file,"r", encoding="utf8")
         frames.append(f.read())
         f.close()
     for frame in frames:
