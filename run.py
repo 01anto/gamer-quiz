@@ -70,9 +70,11 @@ def ask_question():
             if answer == "":
                 print("You didn't enter anything - please enter some text!")
                 continue
+            if len(answer) >= 2:
+                continue
             answer_set = ['a', 'b', 'c', 'd']
             if answer not in answer_set:
-                print("You didn't give an actual option - enter a, b, c or d")
+                print("You didn't give an actual option - enter a, b, c or d or type out your answer")
                 answer = ""
                 continue
 
