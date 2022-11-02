@@ -44,7 +44,12 @@ def ask_question():
         print(question.question_text)
         for option in question.answer_options:
             print(option)
-        answer = input("-->")
+            
+        answer = ""
+        while not answer:
+            answer = input("-->")
+            if answer == "":
+                print("You didn't enter anything - please enter some text!")
 
         if answer.lower() == question.correct_answer.lower():
             print(f"You said {answer}, Thats right!")
