@@ -47,8 +47,8 @@ def gamer_quiz_logo():
     for frame in frames:
         print("".join(frame))
         time.sleep(0.5)
-    
-        
+
+
 def ask_question():
     """
     Ask the user a question from the questions list, present four possible answers,
@@ -66,7 +66,7 @@ def ask_question():
 
         answer = ""
         while not answer:
-            answer = input("-->")
+            answer = input("-->").strip().lower()
             if answer == "":
                 print("You didn't enter anything - please enter some text!")
 
