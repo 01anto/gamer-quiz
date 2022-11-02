@@ -1,3 +1,4 @@
+import time
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -36,7 +37,7 @@ def gamer_quiz_logo():
     """
     Creates an ascii gamer quiz logo at program start
     """
-    logo = ["logo1.txt","logo2.txt","logo3.txt","logo4.txt","logo5.txt","logo6.txt"]
+    logo = ["logo1.txt", "logo2.txt", "logo3.txt", "logo4.txt", "logo5.txt", "logo6.txt"]
     frames =[]
     for file in logo:
         f = open(file,"r",encoding="utf8")
@@ -45,7 +46,7 @@ def gamer_quiz_logo():
     for frame in frames:
         print("".join(frame))
         time.sleep(0.5)
-
+        
 def ask_question():
     """
     Ask the user a question from the questions list, present four possible answers,
