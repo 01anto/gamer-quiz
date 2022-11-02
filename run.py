@@ -14,6 +14,9 @@ SHEET = GSPREAD_CLIENT.open('gamer_quiz')
 
 
 class Question:
+    """
+    Creates an instance of Question
+    """
     def __init__(self, question_text, correct_answer, other_answer, answer_options):
         self.question_text = question_text
         self.correct_answer = correct_answer
@@ -44,7 +47,7 @@ def ask_question():
         print(question.question_text)
         for option in question.answer_options:
             print(option)
-            
+
         answer = ""
         while not answer:
             answer = input("-->")
