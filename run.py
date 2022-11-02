@@ -41,7 +41,7 @@ def gamer_quiz_logo():
     frames = []
     for file in logo:
         f = open(file,"r", encoding="utf8")
-        frames.append(f.read())
+        frames.append(f.readlines())
         f.close()
     for frame in frames:
         print("".join(frame))
