@@ -70,10 +70,10 @@ def ask_question():
             if answer == "":
                 print("You didn't enter anything - please enter some text!")
 
-        if answer.lower() == question.correct_answer.lower():
+        if answer == question.correct_answer.lower():
             print(f"You said {answer}, Thats right!")
             score += 1
-        elif answer.lower() in question.other_answer:
+        elif answer in question.other_answer:
             print(f"You said ({answer}) {question.correct_answer}, Thats right!")
             score += 1
         else:
