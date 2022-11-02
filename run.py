@@ -106,6 +106,7 @@ def main():
     """
     Run all gamer-quiz functions
     """
+    gamer_quiz_logo()
     data = get_user_data()
     update_user_details_worksheet(data)
     ask_question()
