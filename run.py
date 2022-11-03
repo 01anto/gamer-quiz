@@ -96,13 +96,19 @@ def ask_question(username):
             if lives == 0:
                 print(f"Hard Luck {username}, you ran out of lives!")
                 print("Would you like to go again? (y or n)")
-                response = input("-->").strip().lower()
-                if response == "y":
-                    print("Okay here we go again!")
-                    ask_question(username)
-                elif response == "n":
-                    sys.exit(f"Okay Farewell {username}!")
-
+                response = ""
+                while not response:
+                    response = input("-->").strip().lower()
+                    if response == "y":
+                        print("Okay here we go again!")
+                        ask_question(username)
+                    if response == "n":
+                        sys.exit(f"Okay Farewell {username}!")
+                    else:
+                        print("Please Enter y or n")
+                        response = ""
+                        continue
+                        
     return username, score, question_counter
 
 
