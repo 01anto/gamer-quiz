@@ -85,16 +85,16 @@ def ask_question(username):
                 continue
 
         if answer == question.correct_answer.lower():
-            print(f"You said {answer}, Thats right!\n")
+            print(f"You said {answer}, Thats right!")
             score += 1
-        elif answer in question.other_answer:
-            print(f"You said ({answer}) {question.correct_answer}, Thats right!\n")
+        elif answer in question.other_answer.lower(): 
+            print(f"You said ({answer}) {question.correct_answer}, Thats right!")
             score += 1
         else:
-            print(f"{answer} is incorrect, the correct answer is ({question.other_answer}){question.correct_answer}\n")
+            print(f"{answer} is incorrect, the correct answer is ({question.other_answer}) {question.correct_answer}")
             lives -= 1
             if lives == 0:
-                print(f"Hard Luck {username}, you ran out of lives!")                   
+                print(f"Hard Luck {username}, you ran out of lives!")
     return username, score, question_counter
 
 
@@ -107,9 +107,7 @@ def progress_report(username, score, question_counter):
     print(f"you got {score} out of {question_counter} questions correct!")
     if score == 0:
         print(f"You got none of these at all {username}? I must be getting old!  :)")
-    elif score >= 3 and score <= 5:
-        print(f"Not too bad {username}! :)")
-    elif score >= 6 and score <= 9:
+    elif score >= 1:
         print(f"Your pretty good {username}! :)")
     elif score == 10:
         print(f"{username}, you show off! You got everything right, Well Done! :)")
@@ -132,7 +130,7 @@ def repeat_or_leave(username):
         else:
             print("Please Enter y or n")
             response = ""
-            continue 
+            continue
 
 
 def main():
