@@ -82,11 +82,12 @@ def ask_question():
 
 def get_user_data():
     """
-    Get user data and password input from the user
+    Print welcome message and get username
     """
+    print("\nWelcome to the Gamer Quiz!\n")
+    time.sleep(0.5)
     username = input("Please enter your username --> ")
-    password = input("Please enter your password --> ")
-    return username, password
+    return username
 
 
 def main():
@@ -94,7 +95,7 @@ def main():
     Run all gamer-quiz functions
     """
     gamer_quiz_logo()
-    data = get_user_data()
+    username = get_user_data()
     ask_question()
 
 
