@@ -105,7 +105,16 @@ def progress_report(username, score, question_counter):
     prints a different message depending on that score and allows the user to start
     the game again or quit
     """
-  
+    print(f"you got {score} out of {question_counter} questions correct!")
+    if score == 0:
+        print(f"You got none of these at all {username}? I must be getting old!  :)")
+    elif score >= 3 and score <= 5:
+        print(f"Not too bad {username}! :)")
+    elif score >=6 and score <= 9:
+        print(f"Your pretty good {username}! :)")
+    elif score == 10:
+         print(f"{username}, you show off! You got everything right, Well Done! :)")
+    
 
 def main():
     """
