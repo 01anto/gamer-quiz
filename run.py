@@ -94,23 +94,30 @@ def ask_question(username):
             print(f"{answer} is incorrect, the correct answer is ({question.other_answer}){question.correct_answer}")
             lives -= 1
             if lives == 0:
-                print("Hard Luck, you ran out of lives!")
-                break
+                print(f"Hard Luck {username}, you ran out of lives!")
+                print("Would you like to go again? (y or n)")
+                response = input("-->").strip().lower()
+                if response == "y":
+                    print("Okay here we go again!")
+                    ask_question(username)
+                elif response == "n":
+                    sys.exit(f"Okay Farewell {username}!")
+
     return username, score, question_counter
 
 
 def progress_report(username, score, question_counter):
     """
     Informs the user at the end of the game what score they got,
-    prints a different message depending on that score and allows the user to start
-    the game again or quit
+    prints a different message depending on that score and allows the user to
+    start the game again or quit
     """
     print(f"you got {score} out of {question_counter} questions correct!")
     if score == 0:
         print(f"You got none of these at all {username}? I must be getting old!  :)")
     elif score >= 3 and score <= 5:
         print(f"Not too bad {username}! :)")
-    elif score >=6 and score <= 9:
+    elif score >= 6 and score <= 9:
         print(f"Your pretty good {username}! :)")
     elif score == 10:
         print(f"{username}, you show off! You got everything right, Well Done! :)")
@@ -123,7 +130,7 @@ def main():
     gamer_quiz_logo()
     username = get_user_data()
     username, score, question_counter = ask_question(username)
-    progress_report(username,score,question_counter)
+    progress_report(username, score, question_counter)
 
 
 main()
