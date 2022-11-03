@@ -42,6 +42,16 @@ def gamer_quiz_logo():
         time.sleep(0.5)
 
 
+def get_user_data():
+    """
+    Print welcome message and get username
+    """
+    print("\nWelcome to the Gamer Quiz!\n")
+    time.sleep(0.5)
+    username = input("Please enter your username --> ")
+    return username
+    
+
 def ask_question(username):
     """
     Ask the user a question from the questions list, present four possible answers,
@@ -87,16 +97,6 @@ def ask_question(username):
                 print("Hard Luck, you ran out of lives!")
                 break
     print(f"you got {score} out of {question_counter} questions correct!")
-
-
-def get_user_data():
-    """
-    Print welcome message and get username
-    """
-    print("\nWelcome to the Gamer Quiz!\n")
-    time.sleep(0.5)
-    username = input("Please enter your username --> ")
-    return username
 
 
 def main():
