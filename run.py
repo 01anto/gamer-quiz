@@ -113,7 +113,7 @@ def progress_report(username, score, question_counter):
     elif score >=6 and score <= 9:
         print(f"Your pretty good {username}! :)")
     elif score == 10:
-         print(f"{username}, you show off! You got everything right, Well Done! :)")
+        print(f"{username}, you show off! You got everything right, Well Done! :)")
     
 
 def main():
@@ -123,6 +123,7 @@ def main():
     gamer_quiz_logo()
     username = get_user_data()
     username, score, question_counter = ask_question(username)
+    progress_report(username,score,question_counter)
 
 
 main()
