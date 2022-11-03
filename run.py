@@ -41,7 +41,7 @@ def gamer_quiz_logo():
         time.sleep(0.5)
 
 
-def ask_question():
+def ask_question(username):
     """
     Ask the user a question from the questions list, present four possible answers,
     and check it against the correct answer (Or its corresponding letter)
@@ -49,6 +49,7 @@ def ask_question():
     score = 0
     question_counter = 0
     lives = 3
+    print(f"\nHey {username}, Here comes your questions!\n")
     for question in questions:
         question_counter += 1
         print(f"Question {question_counter}")
@@ -101,7 +102,7 @@ def main():
     """
     gamer_quiz_logo()
     username = get_user_data()
-    ask_question()
+    ask_question(username)
 
 
 main()
