@@ -1,4 +1,5 @@
 import time
+import sys
 
 
 class Question:
@@ -60,6 +61,8 @@ def ask_question(username):
         answer = ""
         while not answer:
             answer = input("-->").strip().lower()
+            if answer == "q":
+                sys.exit(f"You have chosen to quit, Farewell {username}!")
             if answer == "":
                 print("You didn't enter anything - please enter some text!")
                 continue
