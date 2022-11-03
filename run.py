@@ -94,21 +94,7 @@ def ask_question(username):
             print(f"{answer} is incorrect, the correct answer is ({question.other_answer}){question.correct_answer}\n")
             lives -= 1
             if lives == 0:
-                print(f"Hard Luck {username}, you ran out of lives!")
-                print("Would you like to go again? (y or n)")
-                response = ""
-                while not response:
-                    response = input("-->").strip().lower()
-                    if response == "y":
-                        print("Okay here we go again!")
-                        ask_question(username)
-                    if response == "n":
-                        sys.exit(f"Okay Farewell {username}!")
-                    else:
-                        print("Please Enter y or n")
-                        response = ""
-                        continue
-                        
+                print(f"Hard Luck {username}, you ran out of lives!")                   
     return username, score, question_counter
 
 
@@ -127,14 +113,27 @@ def progress_report(username, score, question_counter):
         print(f"Your pretty good {username}! :)")
     elif score == 10:
         print(f"{username}, you show off! You got everything right, Well Done! :)")
+    repeat_or_leave(username)
+
+
+def repeat_or_leave(username):
+    """
+    Provides the user with an option to play the game again or quit
+    """ 
     print("Would you like to go again? (y or n)")
-    response = input("-->").strip().lower()
-    if response == "y":
-        print("Okay here we go!")
-        ask_question(username)
-    elif response == "n":
-        sys.exit(f"Okay Farewell {username}!")
-    
+    response = ""
+    while not response:
+        response = input("-->").strip().lower()
+        if response == "y":
+            print("Okay here we go again!")
+            ask_question(username)
+        if response == "n":
+            sys.exit(f"Okay Farewell {username}!")
+        else:
+            print("Please Enter y or n")
+            response = ""
+            continue 
+
 
 def main():
     """
