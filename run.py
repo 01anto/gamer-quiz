@@ -64,7 +64,7 @@ def ask_question(username):
     for question in questions:
         question_counter += 1
         print(f"Question {question_counter}")
-        print(question.question_text)
+        print(f"{question.question_text}")
         for option in question.answer_options:
             print(option)
 
@@ -85,13 +85,13 @@ def ask_question(username):
                 continue
 
         if answer == question.correct_answer.lower():
-            print(f"You said {answer}, Thats right!")
+            print(f"You said {answer}, Thats right!\n")
             score += 1
         elif answer in question.other_answer:
-            print(f"You said ({answer}) {question.correct_answer}, Thats right!")
+            print(f"You said ({answer}) {question.correct_answer}, Thats right!\n")
             score += 1
         else:
-            print(f"{answer} is incorrect, the correct answer is ({question.other_answer}){question.correct_answer}")
+            print(f"{answer} is incorrect, the correct answer is ({question.other_answer}){question.correct_answer}\n")
             lives -= 1
             if lives == 0:
                 print(f"Hard Luck {username}, you ran out of lives!")
