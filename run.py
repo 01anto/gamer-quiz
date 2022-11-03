@@ -96,7 +96,7 @@ def ask_question(username):
             if lives == 0:
                 print("Hard Luck, you ran out of lives!")
                 break
-    print(f"you got {score} out of {question_counter} questions correct!")
+    return username, score, question_counter
 
 
 def progress_report(username, score, question_counter):
@@ -113,7 +113,7 @@ def main():
     """
     gamer_quiz_logo()
     username = get_user_data()
-    ask_question(username)
+    username, score, question_counter = ask_question(username)
 
 
 main()
