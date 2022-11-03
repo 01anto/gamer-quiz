@@ -17,7 +17,12 @@ questions = [
     Question("In what game will you find a creeper?", "minecraft", "a", ["(a) Minecraft", "(b) Terraria", "(c) Roblox", "(d) Fortnite"]),
     Question("On what game console did crash bandicoot first appear?", "playstation", "c", ["(a) Dreamcast", "(b) Gamecube", "(c) Playstation", "(d) Xbox"]),
     Question("Which cancelled game was Hideo Kojima working on before he left konami?", "silent hill", "b", ["(a) Resident Evil", "(b) Silent Hill", "(c) Dying light", "(d) The Thing"]),
-    Question("What was sonic the hedgehogs original name?", "Mr.Needlemouse", "d", ["(a) Mr.Pricklepants", "(b) Shadow the hedgehog", "(c) Danger Mouse", "(d) Mr.Needlemouse"])
+    Question("What was sonic the hedgehogs original name?", "Mr.Needlemouse", "d", ["(a) Mr.Pricklepants", "(b) Shadow the hedgehog", "(c) Danger Mouse", "(d) Mr.Needlemouse"]),
+    Question("Who is the main antagonist in final fantasy 7?", "Sephiroth", "b", ["(a) Chocobo", "(b) Sephiroth", "(c) Yu Yevon", "(d) Dhoulmagus"]),
+    Question("In Metal gear solid 1, which song was sung in Irish?", "The Best Is Yet To Come", "a", ["(a) The Best Is Yet To Come", "(b) Snake Eater", "(c) Nuclear", "(d) Poor Misguided Fool"]),
+    Question("Who is the main character in Devil May Cry?", "Dante", "d", ["(a) Mundus", "(b) Vergil", "(c) Griffon", "(d) Dante"]),
+    Question("What was the first Mega Man game on the Super Nintendo (SNES)?", "Mega Man X", "b", ["(a) Mega Man", "(b) Mega Man X", "(c) Mega Man X 2", "(d) Mega Man X 3"]),
+    Question("What is the main weapon used in Kingdom Hearts?", "Keyblade", "c", ["(a) Chakram", "(b) Excaliber", "(c) Keyblade", "(d) Lightsaber"])
 ]
 
 
