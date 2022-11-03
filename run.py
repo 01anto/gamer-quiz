@@ -50,7 +50,7 @@ def get_user_data():
     time.sleep(0.5)
     username = input("Please enter your username --> ")
     return username
-    
+
 
 def ask_question(username):
     """
@@ -98,6 +98,14 @@ def ask_question(username):
                 break
     print(f"you got {score} out of {question_counter} questions correct!")
 
+
+def progress_report(username, score, question_counter):
+    """
+    Informs the user at the end of the game what score they got,
+    prints a different message depending on that score and allows the user to start
+    the game again or quit
+    """
+  
 
 def main():
     """
