@@ -121,6 +121,13 @@ def progress_report(username, score, question_counter):
         print(f"Your pretty good {username}! :)")
     elif score == 10:
         print(f"{username}, you show off! You got everything right, Well Done! :)")
+    print("Would you like to go again? (y or n)")
+    response = input("-->").strip().lower()
+    if response == "y":
+        print("Okay here we go!")
+        ask_question(username)
+    elif response == "n":
+        sys.exit(f"Okay Farewell {username}!")
     
 
 def main():
