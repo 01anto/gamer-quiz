@@ -38,6 +38,9 @@
    - The user is then informed what input the program is expecting.
   ## Questions
   ![](readme-extras/fullscreenpic-pp3.jpg)
+   - The user is then presented with a question.
+   - The program continues to ask a question until all questions have been asked.
+   - The user can quit anytime by passing q as an answer.
   ## Correct/Incorrect messages
   ![](readme-extras/multiplecorrect-pp3.jpg)
   ![](readme-extras/multipleincorrect-pp3.jpg)
