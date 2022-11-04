@@ -90,17 +90,16 @@ def ask_question(username):
                 continue
         
         if answer == question.correct_answer.lower():
-            print(f"You said {answer}, Thats right!")
+            print(f"You said {answer}, Thats right!\n")
             score += 1
         elif answer in question.other_answer.lower(): 
-            print(f"You said ({answer}) {question.correct_answer}, Thats right!")
+            print(f"You said ({answer}) {question.correct_answer}, Thats right!\n")
             score += 1
         else:
-            print(f"{answer} is incorrect, the correct answer is ({question.other_answer}) {question.correct_answer}")
+            print(f"{answer} is incorrect, the correct answer is ({question.other_answer}) {question.correct_answer}\n")
             lives -= 1
             if lives == 0:
-                print(f"Hard Luck {username}, you ran out of lives!")
-                repeat_or_leave(username)
+                print(f"Hard Luck {username}, you ran out of lives!\n")
     return username, score, question_counter
 
 
@@ -124,13 +123,13 @@ def repeat_or_leave(username):
     """
     Provides the user with an option to play the game again or quit.
     """ 
-    print("Would you like to go again? (y or n)")
     response = ""
     while not response:
+        print("Would you like to go again? (y or n)")
         response = input("-->").strip().lower()
         if response == "y":
             print("Okay here we go again!")
-            ask_question(username)
+            main()
         if response == "n":
             sys.exit(f"Okay Farewell {username}!")
         else:
