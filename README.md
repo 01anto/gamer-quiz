@@ -31,6 +31,8 @@
   ![](readme-extras/enterusername-pp3.jpg)
 
   ![](readme-extras/hellousername-pp3.jpg)
+   - The user is then asked for their username
+   - The username is then repeated to tell them that the questions are about to begin
   ## Acceptable answers
   ![](readme-extras/inputinfo-pp3.jpg)
   ## Questions
