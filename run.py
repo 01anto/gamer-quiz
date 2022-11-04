@@ -1,5 +1,7 @@
-import time
 import sys
+import time
+import os
+os.system("clear")
 
 
 class Question:
