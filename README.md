@@ -20,14 +20,26 @@
 # Features
 
   ## Logo
+  ![](readme-extras/logo-pp3.jpg)
   ## Welcome message
+  ![](readme-extras/welcome-pp3.jpg)
   ## Username
+  ![](readme-extras/enterusername-pp3.jpg)
+  ![](readme-extras/hellousername-pp3.jpg)
   ## Acceptable answers
+  ![](readme-extras/inputinfo-pp3.jpg)
   ## Questions
+  ![](readme-extras/fullscreenpic.jpg)
   ## Correct/Incorrect messages
+  ![](readme-extras/.jpg)
   ## Number of questions correct
+  ![](readme-extras/.jpg)
   ## specific message
+  ![](readme-extras/somecorrect-pp3.jpg)
+  ![](readme-extras/allcorrect-pp3.jpg)
+  ![](readme-extras/allwrong-pp3.jpg)
   ## Play game again or quit
+  ![](readme-extras/goagain-pp3.jpg)
 
 # Future Features
 
@@ -121,6 +133,6 @@
 	and saved these into seperate text files to help provide an animation style effect.
 
   ## Acknowledgements
-  
+
    - I would like to thank my mentor Spencer Barriball for all his help and advice throughout
      this project.
