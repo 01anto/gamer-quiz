@@ -12,6 +12,7 @@
 
 # User Experience
   ## Target Audience
+  It is targeted at people that want to play a quiz game.
   ## Owner Stories
   ## User Stories
   ## Design
