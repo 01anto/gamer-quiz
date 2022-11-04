@@ -46,6 +46,7 @@ def gamer_quiz_logo():
     """
     Creates an ascii gamer quiz logo at program start
     """
+    # The logo was created using https://manytools.org/hacker-tools/ascii-banner/
     logo = ["logo1.txt", "logo2.txt", "logo3.txt", "logo4.txt", "logo5.txt", "logo6.txt"]
     frames = []
     for file in logo:
