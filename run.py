@@ -112,7 +112,7 @@ def progress_report(username, score, question_counter):
     print(f"you got {score} out of {question_counter} questions correct!")
     if score == 0:
         print(f"You got none of these at all {username}? I must be getting old! :)")
-    elif score >= 1:
+    elif score <= 9:
         print(f"Your pretty good {username}! :)")
     elif score == 10:
         print(f"{username}, you show off! You got everything right, Well Done! :)")
