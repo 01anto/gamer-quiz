@@ -77,6 +77,8 @@ def ask_question(username):
     score = 0
     question_counter = 0
     print(f"\nHey {username}, Here comes your questions!\n")
+    print("Type out your answer or its corresponding letter e.g. a for (a)")
+    print("You can quit the game by entering q as an answer\n")
     for question in questions:
         question_counter += 1
         print(f"Question {question_counter}")
