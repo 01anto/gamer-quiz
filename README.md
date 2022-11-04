@@ -25,13 +25,15 @@
   ![](readme-extras/welcome-pp3.jpg)
   ## Username
   ![](readme-extras/enterusername-pp3.jpg)
+
   ![](readme-extras/hellousername-pp3.jpg)
   ## Acceptable answers
   ![](readme-extras/inputinfo-pp3.jpg)
   ## Questions
-  ![](readme-extras/fullscreenpic.jpg)
+  ![](readme-extras/fullscreenpic-pp3.jpg)
   ## Correct/Incorrect messages
-  ![](readme-extras/.jpg)
+  ![](readme-extras/multiplecorrect-pp3.jpg)
+  ![](readme-extras/multipleincorrect-pp3.jpg)
   ## Number of questions correct
   ![](readme-extras/.jpg)
   ## specific message
