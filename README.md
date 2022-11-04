@@ -115,9 +115,12 @@
   ## Contents
 
   ## Media
-  
+
    - [ASCII logo](https://manytools.org/hacker-tools/ascii-banner/)
     - The ASCII logo was created using a tool from this site. I then divided the logo up
 	and saved these into seperate text files to help provide an animation style effect.
 
   ## Acknowledgements
+  
+   - I would like to thank my mentor Spencer Barriball for all his help and advice throughout
+     this project.
