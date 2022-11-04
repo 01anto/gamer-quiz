@@ -91,6 +91,24 @@
  - Python 3
 
 # Technologies, Frameworks and Libraries used
+
+ - [Python template](https://github.com/Code-Institute-Org/python-essentials-template)
+   - The Code Institute's Python essentials template has been used for this project
+
+ - [Gitpod IDE](https://www.gitpod.io/)
+   - All code for this project was created using Gitpod
+
+ - [GitHub](https://github.com/)
+   - All code for this project was added, commited and pushed to github
+
+ - [Heroku](https://www.heroku.com/)
+   - This project was deployed using heroku
+    
+ - [Techsini](https://techsini.com/multi-mockup/index.php)
+   - The mockup image for the readme was created using Techsini
+    
+ - [TOC Generator](http://ecotrust-canada.github.io/markdown-toc/)
+   - The Readme table of contents was created using the TOC Generator
    
 # Credits
 
