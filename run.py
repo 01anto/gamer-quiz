@@ -58,13 +58,11 @@ def ask_question(username):
     """
     Ask the user a question from the questions list. Present four possible
     answers. Take input, perform validation and compare input to correct_answer
-    or other_answer. Adjust score, question_counter and lives accordingly.
-    Allow the user to quit in game by giving 'q' as answer. Call repeat_or_leave
-    function if all lives lost
+    or other_answer. Adjust score, and question_counter accordingly.
+    Allow the user to quit in game by giving 'q' as answer.
     """
     score = 0
     question_counter = 0
-    lives = 3
     print(f"\nHey {username}, Here comes your questions!\n")
     for question in questions:
         question_counter += 1
@@ -97,9 +95,6 @@ def ask_question(username):
             score += 1
         else:
             print(f"{answer} is incorrect, the correct answer is ({question.other_answer}) {question.correct_answer}\n")
-            lives -= 1
-            if lives == 0:
-                print(f"Hard Luck {username}, you ran out of lives!\n")
     return username, score, question_counter
 
 
