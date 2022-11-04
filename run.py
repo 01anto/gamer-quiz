@@ -95,6 +95,7 @@ def ask_question(username):
             lives -= 1
             if lives == 0:
                 print(f"Hard Luck {username}, you ran out of lives!")
+                repeat_or_leave(username)
     return username, score, question_counter
 
 
