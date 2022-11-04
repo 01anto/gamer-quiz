@@ -26,6 +26,7 @@
    - It also clearly gets accross to the user what the program is about.
   ## Welcome message
   ![](readme-extras/welcome-pp3.jpg)
+   - The user is then welcomed
   ## Username
   ![](readme-extras/enterusername-pp3.jpg)
 
