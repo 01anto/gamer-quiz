@@ -2,6 +2,12 @@
 
 # Introduction
 
+ Welcome to the Gamer Quiz, A terminal based quiz game.
+
+ Live site link: https://gamer-quiz.herokuapp.com/
+
+ ![Gamer Quiz techsini mockup](readme-extras/techsini-pp3.jpg)
+
 # Table of contents
 
 # User Experience
