@@ -36,7 +36,7 @@ def gamer_quiz_logo():
     logo = ["logo1.txt", "logo2.txt", "logo3.txt", "logo4.txt", "logo5.txt", "logo6.txt"]
     frames = []
     for file in logo:
-        f = open(file,"r", encoding="utf8")
+        f = open(file, "r", encoding="utf8")
         frames.append(f.readlines())
         f.close()
     for frame in frames:
@@ -70,7 +70,6 @@ def ask_question(username):
         print(f"{question.question_text}")
         for option in question.answer_options:
             print(option)
-       
         answer = ""
         while not answer:
             answer = input(f"-->\n").strip().lower()
@@ -86,11 +85,10 @@ def ask_question(username):
                 print("You didn't give an actual option - enter a, b, c or d or type out your answer")
                 answer = ""
                 continue
-        
         if answer == question.correct_answer.lower():
             print(f"You said {answer}, Thats right!\n")
             score += 1
-        elif answer in question.other_answer.lower(): 
+        elif answer in question.other_answer.lower():
             print(f"You said ({answer}) {question.correct_answer}, Thats right!\n")
             score += 1
         else:
@@ -117,7 +115,7 @@ def progress_report(username, score, question_counter):
 def repeat_or_leave(username):
     """
     Provides the user with an option to play the game again or quit.
-    """ 
+    """
     response = ""
     while not response:
         print("Would you like to go again? (y or n)")
