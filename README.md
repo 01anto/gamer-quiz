@@ -21,6 +21,9 @@
 
   ## Logo
   ![](readme-extras/logo-pp3.jpg)
+   - The Logo is the first thing printed to the screen when the program runs.
+   - It is printed out in an animation style effect to add visual interest.
+   - It also clearly gets accross to the user what the program is about.
   ## Welcome message
   ![](readme-extras/welcome-pp3.jpg)
   ## Username
