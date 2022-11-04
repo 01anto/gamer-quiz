@@ -47,6 +47,15 @@
   ## Desktop testing
 
   ## Validator Testing
+  
+   - Validator Installation
+
+    - Pep8online.com website was not available
+    - As instructed by Code Institute staff a pep8 validator (pycodestyle) was used in my Gitpod workspace
+    - The command pip3 install pycodestyle was used but the extension was already installed
+    - Press Ctrl+Shift+p to open search bar and type linter
+    - Click on Python: Select Linter and then select pycodestyle.
+    - Errors were underlined in red and listed in the problems tab beside the terminal
  
 # Bugs
 
