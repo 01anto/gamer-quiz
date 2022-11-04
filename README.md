@@ -35,6 +35,7 @@
    - The username is then repeated to tell them that the questions are about to begin
   ## Acceptable answers
   ![](readme-extras/inputinfo-pp3.jpg)
+   - The user is then informed what input the program is expecting.
   ## Questions
   ![](readme-extras/fullscreenpic-pp3.jpg)
   ## Correct/Incorrect messages
