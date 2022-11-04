@@ -47,7 +47,7 @@
   ## Desktop testing
 
   ## Validator Testing
-  
+
    - Validator Installation
 
     - Pep8online.com website was not available
@@ -64,6 +64,27 @@
   ## Unfixed Bugs
 
 # Deployment
+
+- Before Heroku Deployment I ensured that:
+
+   - Code is located in a run.py file
+   - Code Institute template files have not been edited
+   - All input statements in program code end with \n so they display on Heroku
+   - Requirements.txt has been updated using the command pip3 freeze > requirements.txt
+
+ - I then deployed my project by completing the below steps:
+
+   - Log in to Heroku and click on create new app button
+   - Enter project name, select region and and click create app
+   - Click on the settings tab and click on reveal config vars
+   - Add 'PORT' as a key and '8000' as a value then click add
+   - Click on Add buildpack
+   - Click Python and then save changes
+   - Click nodejs and then save changes
+   - Click on Deploy, select GitHub for the Deployment method and then select Connect to GitHub
+   - Enter repository name, click Search and then Connect
+   - In Manual deploy click Deploy Branch(I later went to Automatic deploys and clicked Enable Automatic Deploys to allow the app to update when i push to GitHub)
+   - Click on the view button (or Open App at top of page if returning) to see the deployed project.
 
 # Languages Used
 
