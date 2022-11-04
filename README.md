@@ -32,10 +32,13 @@
 # Future Features
 
   ## More Questions
+   - Add extra lot of questions to make the quiz longer.
 
   ## Lives
+   - Add lives so that user can only get a set number of questions wrong.
 
   ## Scoreboard
+   - Implement a spreadsheet to be used for high scores.
 
 # Testing
 
