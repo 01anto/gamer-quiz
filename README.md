@@ -88,6 +88,8 @@
 
 # Languages Used
 
+ - Python 3
+
 # Technologies, Frameworks and Libraries used
    
 # Credits
