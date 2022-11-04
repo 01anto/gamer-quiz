@@ -54,8 +54,11 @@ def get_user_data():
 
 def ask_question(username):
     """
-    Ask the user a question from the questions list, present four possible answers,
-    and check it against the correct answer (Or its corresponding letter)
+    Ask the user a question from the questions list. Present four possible
+    answers. Take input, perform validation and compare input to correct_answer
+    or other_answer. Adjust score, question_counter and lives accordingly.
+    Allow the user to quit in game by giving 'q' as answer. Call repeat_or_leave
+    function if all lives lost
     """
     score = 0
     question_counter = 0
@@ -67,7 +70,7 @@ def ask_question(username):
         print(f"{question.question_text}")
         for option in question.answer_options:
             print(option)
-
+       
         answer = ""
         while not answer:
             answer = input("-->").strip().lower()
@@ -83,7 +86,7 @@ def ask_question(username):
                 print("You didn't give an actual option - enter a, b, c or d or type out your answer")
                 answer = ""
                 continue
-
+        
         if answer == question.correct_answer.lower():
             print(f"You said {answer}, Thats right!")
             score += 1
@@ -102,12 +105,12 @@ def ask_question(username):
 def progress_report(username, score, question_counter):
     """
     Informs the user at the end of the game what score they got,
-    prints a different message depending on that score and allows the user to
-    start the game again or quit
+    prints a different message depending on that score and calls
+    the repeat_or_leave function
     """
     print(f"you got {score} out of {question_counter} questions correct!")
     if score == 0:
-        print(f"You got none of these at all {username}? I must be getting old!  :)")
+        print(f"You got none of these at all {username}? I must be getting old! :)")
     elif score >= 1:
         print(f"Your pretty good {username}! :)")
     elif score == 10:
@@ -117,7 +120,7 @@ def progress_report(username, score, question_counter):
 
 def repeat_or_leave(username):
     """
-    Provides the user with an option to play the game again or quit
+    Provides the user with an option to play the game again or quit.
     """ 
     print("Would you like to go again? (y or n)")
     response = ""
