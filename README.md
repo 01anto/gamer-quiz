@@ -72,7 +72,7 @@
    - All input statements in program code end with \n so they display on Heroku
    - Requirements.txt has been updated using the command pip3 freeze > requirements.txt
 
- - I then deployed my project by completing the below steps:
+- I then deployed my project by completing the below steps:
 
    - Log in to Heroku and click on create new app button
    - Enter project name, select region and and click create app
@@ -115,5 +115,9 @@
   ## Contents
 
   ## Media
+  
+   - [ASCII logo](https://manytools.org/hacker-tools/ascii-banner/)
+    - The ASCII logo was created using a tool from this site. I then divided the logo up
+	and saved these into seperate text files to help provide an animation style effect.
 
   ## Acknowledgements
