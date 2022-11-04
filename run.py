@@ -75,7 +75,7 @@ def ask_question(username):
        
         answer = ""
         while not answer:
-            answer = input("-->").strip().lower()
+            answer = input(f"-->\n").strip().lower()
             if answer == "q":
                 sys.exit(f"You have chosen to quit, Farewell {username}!")
             if answer == "":
@@ -126,7 +126,7 @@ def repeat_or_leave(username):
     response = ""
     while not response:
         print("Would you like to go again? (y or n)")
-        response = input("-->").strip().lower()
+        response = input(f"-->\n").strip().lower()
         if response == "y":
             print("Okay here we go again!")
             main()
