@@ -141,8 +141,6 @@
    
 # Credits
 
-  ## Contents
-
   ## Media
 
    - [ASCII logo](https://manytools.org/hacker-tools/ascii-banner/)
