@@ -131,6 +131,7 @@
 # Bugs
 
   ## Fixed Bugs
+  - Many line length and trailing whitespace errors were fixed with the use of the pep8 gitpod validator.
   
   ## Unfixed Bugs
   - Some minor line length and trailing whitespace errors remain as highlighted by the pep8 gitpod validator.
