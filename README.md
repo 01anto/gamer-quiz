@@ -150,6 +150,8 @@
 
   ## Fixed Bugs
   - Many line length and trailing whitespace errors were fixed with the use of the pep8 gitpod validator.
+  - Indentation errors were fixed throughout the build.
+  - missing function arguments were fixed throughout the build.  
   
   ## Unfixed Bugs
   - Some minor line length and trailing whitespace errors remain as highlighted by the pep8 gitpod validator.
