@@ -46,12 +46,12 @@
   ![](readme-extras/multipleincorrect-pp3.jpg)
    - The program will inform the user if they get the question right or wrong
    - If the user does not enter a valid answer, it wont be accepted and will request a valid input
-  ## Number of questions correct
-  ![](readme-extras/.jpg)
-  ## specific message
+  ## Number of questions correct and specific message
   ![](readme-extras/somecorrect-pp3.jpg)
   ![](readme-extras/allcorrect-pp3.jpg)
   ![](readme-extras/allwrong-pp3.jpg)
+   - If the user plays the game to the end they will be presented with their score.
+   - They will also get a specific message depending on what their score is.
   ## Play game again or quit
   ![](readme-extras/goagain-pp3.jpg)
 
