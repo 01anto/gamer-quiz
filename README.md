@@ -73,19 +73,22 @@
 
   ## Correct Input Testing
   ![](readme-extras/singlecorrect-pp3.jpg)
-  - The program takes a lowercase option.
+  - The program will accept a correct lowercase option.
   
   ![](readme-extras/capitalcorrect-pp3.jpg)
-  - The program takes a uppercase option.
+  - The program will accept a correct uppercase option.
   
   ![](readme-extras/multiplecorrect-pp3.jpg)
-  - The program takes the word as an answer.
+  - The program will accept a correctly spelled word as an answer.
   
   ![](readme-extras/allcapitalcorrect-pp3.jpg)
-  - The program takes all uppercase word as an answer.
+  - The program will accept a correctly spelled uppercase word as an answer.
+  
+  ![](readme-extras/correctlowercaseword-pp3.jpg)
+   - The program will accept a correctly spelled lowercase word as an answer.
   
   ![](readme-extras/mixedcapitalcorrect-pp3.jpg)
-   - The program takes a mix of lowercase and uppercase words as an answer.
+   - The program will accept a correctly spelled lowercase and uppercase word as an answer.
   
   ## Incorrect Input Testing
   ![](readme-extras/blankinput-pp3.jpg)
