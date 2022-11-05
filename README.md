@@ -18,10 +18,13 @@
   ## Owner Stories
   As an owner:
     - I want to create a terminal style program built with python
+    - I want the program to demonstrate some variation based on user input or scores
+    - I want the program to validate user input effectively
+    - I want to learn from the project to increase my python Knowledge
    
   ## User Stories
   As a user:
-    - I want to play a game so I can test my gaming knowledge.
+    - I want to play a game so I can test my gaming knowledge
     - I want the rules or instructions clearly set out so I understand what im doing
     - I want to be able to leave the game easily if I need to leave early
     - I want the option of being able to play the game again to better my last score
