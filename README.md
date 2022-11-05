@@ -53,10 +53,15 @@
    - If the user plays the game to the end they will be presented with their score.
    - They will also get a specific message depending on what their score is.
   ## Play game again or quit
+
   ![](readme-extras/goagain-pp3.jpg)
    - The user will then be asked if they would like to play again.
-   - If the user enters y the program restarts.
-   - If the user enters n the program displays a message before exiting.
+  
+  ![](readme-extras/goagainyes-pp3.jpg)
+   - If the user enters y a message is printed before the program restarts.
+  
+  ![](readme-extras/goagainno-pp3.jpg)
+   - If the user enters n a message is printed before exiting.
 
 # Future Features
 
