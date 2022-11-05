@@ -141,6 +141,11 @@
     - Press Ctrl+Shift+p to open search bar and type linter
     - Click on Python: Select Linter and then select pycodestyle.
     - Errors were underlined in red and listed in the problems tab beside the terminal
+  
+   ## Python Tutor Testing
+
+ - [Python Tutor](https://pythontutor.com/)
+  - Python tutor was used throughout the building of this project to ensure the code was working as expected.
  
 # Bugs
 
