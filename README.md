@@ -114,6 +114,9 @@
   ![](readme-extras/misspeltanswer-pp3.jpg)
    - The program will not accept a word that is spelled incorrectly.
   
+  ![](readme-extras/yornonly-pp3.jpg)
+   - The program will not accept any values other than y or n to play game again or quit.
+  
   ## Validator Testing
 
    - Validator Installation
