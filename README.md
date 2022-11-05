@@ -44,6 +44,8 @@
   ## Correct/Incorrect messages
   ![](readme-extras/multiplecorrect-pp3.jpg)
   ![](readme-extras/multipleincorrect-pp3.jpg)
+   - The program will inform the user if they get the question right or wrong
+   - If the user does not enter a valid answer, it wont be accepted and will request a valid input
   ## Number of questions correct
   ![](readme-extras/.jpg)
   ## specific message
