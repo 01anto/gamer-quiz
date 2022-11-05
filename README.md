@@ -133,6 +133,9 @@
   ## Fixed Bugs
   
   ## Unfixed Bugs
+  - Some minor line length and trailing whitespace errors remain as highlighted by the pep8 gitpod validator.
+  - This has been left as I could not alter the code layout in a sufficient way without causing more serious errors.
+
 
 # Deployment
 
