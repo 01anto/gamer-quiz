@@ -16,10 +16,11 @@
   ## Owner Stories
    
   ## User Stories
-    - As a gamer, I want to play a game so I can test my gaming knowledge.
-    - As a user, I want the rules or instructions clearly set out so I understand what im doing
-    - As a user, I want to be able to leave the game easily if I need to leave early
-    - As a user, I want the option of being able to play the game again to better my last score
+  As a user
+    - I want to play a game so I can test my gaming knowledge.
+    - I want the rules or instructions clearly set out so I understand what im doing
+    - I want to be able to leave the game easily if I need to leave early
+    - I want the option of being able to play the game again to better my last score
   ## Design
 
 # Features
