@@ -97,6 +97,9 @@
   ![](readme-extras/capitalIncorrect.jpg)
    - The program will not accept an incorrect capital option.
   
+  ![](readme-extras/incorrectoptionlowercase-pp3.jpg)
+   - The program will not accept an incorrect lowercase option.
+  
   ![](readme-extras/multipleincorrect-pp3.jpg)
    - The program will not accept an incorrect word.
   
