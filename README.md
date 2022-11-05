@@ -89,6 +89,7 @@
    - Implement a spreadsheet to be used for high scores.
 
 # Testing
+- All of the following testing was carried out on my laptop:
 
   ## Correct Input Testing
   ![](readme-extras/singlecorrect-pp3.jpg)
