@@ -11,16 +11,21 @@
 # Table of contents
 
 # User Experience
+
   ## Target Audience
   It is targeted at people that want to play a quiz game.
+
   ## Owner Stories
+  As an owner:
+    - I want to create a terminal style program built with python
    
   ## User Stories
-  As a user
+  As a user:
     - I want to play a game so I can test my gaming knowledge.
     - I want the rules or instructions clearly set out so I understand what im doing
     - I want to be able to leave the game easily if I need to leave early
     - I want the option of being able to play the game again to better my last score
+  
   ## Design
 
 # Features
