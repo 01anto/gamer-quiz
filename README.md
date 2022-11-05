@@ -71,9 +71,13 @@
 
 # Testing
 
-  ## Browser Testing
-
-  ## Desktop testing
+  ## Correct Input Testing
+  ![](readme-extras/singlecorrect-pp3.jpg)
+  ![](readme-extras/capitalcorrect-pp3.jpg)
+  ![](readme-extras/multiplecorrect-pp3.jpg)
+  ![](readme-extras/allcapitalcorrect-pp3.jpg)
+  ![](readme-extras/mixedcapitalcorrect-pp3.jpg)
+   - The program takes correct input as expected.
 
   ## Validator Testing
 
