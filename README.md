@@ -89,10 +89,20 @@
   
   ## Incorrect Input Testing
   ![](readme-extras/blankinput-pp3.jpg)
+   - The program will not accept a blank input.
+  
   ![](readme-extras/incorrectoption-pp3.jpg)
-  ![](readme-extras/capitalincorrect-pp3.jpg)
+   - The program will not accept an incorrect option.
+  
+  ![](readme-extras/capitalIncorrect.jpg)
+   - The program will not accept an incorrect capital option.
+  
   ![](readme-extras/multipleincorrect-pp3.jpg)
+   - The program will not accept an incorrect word.
+  
   ![](readme-extras/misspeltanswer-pp3.jpg)
+   - The program will not accept a word that is spelled incorrectly.
+  
   ## Validator Testing
 
    - Validator Installation
